@@ -1,3 +1,8 @@
-const color = () => {
+const color  = {
+    primary: {
 
+    },
+    secondary : {
+
+    }
 }

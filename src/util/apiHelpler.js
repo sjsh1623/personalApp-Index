@@ -1,10 +1,17 @@
 const axios = require("axios");
-const apiHelper = (method = 'get', url = '', data = {}) => {
+const ApiHelper = async (method = 'get', url = '', data = {}) => {
     axios({
-        url : url,
-        method : method,
-        data : data
-    }).then( (response) => {
-
+        url: url,
+        method: method,
+        data: data
+    }).then((response) => {
+        return response
+    }).catch((err) => {
+        return {
+            'code': err.code,
+            'message': err.message
+        }
     })
 }
+
+export default ApiHelper;
