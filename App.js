@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import {apiHelper} from 'src/util/apiHelpler'
 export default function App() {
   return (
     <View style={styles.container}>
