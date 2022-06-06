@@ -21,7 +21,8 @@ module.exports = function(api) {
             "@res": "./src/res",
             "@screens": "./src/screens",
             "@assets": "./assets",
-            "@navigations" : "./src/navigation"
+            "@navigations" : "./src/navigation",
+            "@icons" : "./assets/icons"
           }
         }
       ]
