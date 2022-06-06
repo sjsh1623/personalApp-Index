@@ -8,7 +8,7 @@ const LoadingScreen = ({navigation}) => {
         const nextScreen = async () => {
             const isTokenExist = true; // 이미 로그인이 되어있을때 즉, 토큰이 존재할때
             const isLaunchedOnce = await AsyncStorage.getItem('isLaunchedOnce') === 'true'; // 한번이라도 앱실행을 했는지 여부
-            if (isTokenExist) return 'HomeNavigation';
+            if (isTokenExist) return 'MainNavigation';
             if (isLaunchedOnce) return 'LoginNavigation';
             AsyncStorage.setItem('isLaunchedOnce', 'true')
             return 'OnBoardingNavigation'
