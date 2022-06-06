@@ -1,29 +1,29 @@
-import {getFocusedRouteNameFromRoute} from '@react-navigation/native';
+import React from "react";
+import {Text, View, TouchableOpacity, Image} from "react-native";
+import {bottomIcons} from "@res/bottomIcons";
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import Icon from 'react-native-vector-icons/Ionicons';
 import HomeNavigation from "@navigations/main/HomeNavigation.js";
 import ChatListScreen from "@screens/main/ChatListScreen.js";
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import {defaultScreenOptions, defaultTabOptions} from "@res/navigationOptions.js";
-import React from "react";
-import {Text} from "react-native";
-import Icon from 'react-native-vector-icons/Ionicons';
-import {tabIcon} from "@res/bottomIcons";
-import {bottomIcons} from "../../res/bottomIcons";
+import SearchScreen from "@screens/main/SearchScreen.js";
+import {defaultTabOptions} from "@res/navigationOptions.js";
 
 
-const MainTabNavigation = ({navigation, route}) => {
+const MainTabNavigation = () => {
     const Tab = createBottomTabNavigator();
 
     return (
         <Tab.Navigator
+            options = {mainHeaderOption}
             screenOptions={({route}) => (screenOption(route))}>
             <Tab.Screen name="Home" component={HomeNavigation}/>
             <Tab.Screen name="Chat" component={ChatListScreen}/>
+            <Tab.Screen name="Search" component={SearchScreen}/>
         </Tab.Navigator>
     );
 }
 
 const screenOption = (route) => {
-    const defaultOptions = {...defaultScreenOptions, ...defaultTabOptions};
     const tabBarOption = {
         tabBarIcon: ({focused}) => {
             const icon = bottomIcons[route.name];
@@ -32,7 +32,23 @@ const screenOption = (route) => {
         },
     }
 
-    return {...defaultOptions, ...tabBarOption}
+    return {...defaultTabOptions, ...tabBarOption, ...mainHeaderOption}
+}
+
+const mainHeaderOption = {
+    headerBackVisible: false,
+    title: '',
+    headerLeft: ({onPress}) => (
+        <TouchableOpacity onPress={onPress} style = {{marginLeft: 20}}>
+            <Text>Logo Here</Text>
+        </TouchableOpacity>
+    ),
+    headerRight: ({onPress}) => (
+        <TouchableOpacity onPress={onPress} style = {{marginRight: 20}}>
+            <Icon name= 'person-circle-outline' size={30} color="black"/>
+        </TouchableOpacity>
+    ),
+    headerMode: 'none'
 }
 
 export default MainTabNavigation;

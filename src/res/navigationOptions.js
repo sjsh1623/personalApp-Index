@@ -1,3 +1,5 @@
+import {Text, TouchableOpacity, View} from "react-native";
+
 export const defaultScreenOptions = {
     headerShown: false
 }
@@ -5,4 +7,3 @@ export const defaultScreenOptions = {
 export const defaultTabOptions = {
     tabBarShowLabel: false
 }
-

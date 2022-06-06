@@ -2,4 +2,5 @@
 export const bottomIcons = {
     'Home' : 'home',
     'Chat' : 'chatbubbles',
+    'Search' : 'search',
 }
