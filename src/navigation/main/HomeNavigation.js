@@ -1,13 +1,12 @@
 import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import LoginScreen from "../screens/login/LoginScreen";
-import MainScreen from "../screens/main/MainScreen";
+import HomeScreen from "@screens/main/HomeScreen";
 
-const MainNavigation = () => {
+const HomeNavigation = () => {
     const Stack = createNativeStackNavigator();
     return (
         <Stack.Navigator screenOptions={screenOptions}>
-            <Stack.Screen name="Main" component={MainScreen}/>
+            <Stack.Screen name="Home" component={HomeScreen}/>
         </Stack.Navigator>
     )
 }
@@ -18,4 +17,4 @@ const screenOptions = {
 }
 
 
-export default MainNavigation;
+export default HomeNavigation;
