@@ -1,8 +1,8 @@
 export const defaultScreenOptions = {
-    headerShown: false,
-    tabBarShowLabel: false
+    headerShown: false
 }
 
 export const defaultTabOptions = {
     tabBarShowLabel: false
 }
+
