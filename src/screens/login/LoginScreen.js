@@ -1,9 +1,9 @@
 import {SafeAreaView, Text} from "react-native";
 
 const LoginScreen = () => {
-    return (
+    return(
         <SafeAreaView >
-            <Text>Ttest</Text>
+            <Text>Login</Text>
         </SafeAreaView>
     )
 }
