@@ -3,7 +3,7 @@ import {SafeAreaView, Text} from "react-native";
 const ArticleScreen = () => {
     return(
         <SafeAreaView>
-            <Text>ArticleScreen</Text>
+          testeswt
         </SafeAreaView>
     )
 }

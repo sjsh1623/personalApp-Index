@@ -18,11 +18,12 @@ module.exports = function(api) {
             ".json"
           ],
           alias: {
-            "@res": "./src/res",
-            "@screens": "./src/screens",
             "@assets": "./assets",
+            "@icons" : "./assets/icons",
+            "@res": "./src/res",
+            "@molecules" : "./src/component/molecules",
+            "@screens": "./src/screens",
             "@navigations" : "./src/navigation",
-            "@icons" : "./assets/icons"
           }
         }
       ]

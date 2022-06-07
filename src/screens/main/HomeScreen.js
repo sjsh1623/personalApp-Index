@@ -1,9 +1,12 @@
 import {SafeAreaView, Text} from "react-native";
+import FeedMolecule from "@molecules/FeedMolecule.js";
+import HomeStyle from './style/HomeStyle';
+
 
 const HomeScreen = () => {
 return(
-    <SafeAreaView>
-        <Text>MainScreen</Text>
+    <SafeAreaView  style={HomeStyle.container}>
+        <FeedMolecule/>
     </SafeAreaView>
 )
 }
