@@ -2,19 +2,21 @@ import {View, Text} from "react-native";
 
 const FeedMolecule = () => {
     return (
+        // Molecule
         <View style = {{
             height : 230,
             backgroundColor: 'white',
             width : '90%',
             marginTop : 10
         }}>
+            //Header atom
             <View style = {{
                 width: '100%',
                 height: '20%',
                 backgroundColor : 'black',
             }}>
-
             </View>
+            //Summary atom
             <View
                 style = {{
                     width: '100%',
@@ -22,6 +24,7 @@ const FeedMolecule = () => {
                     backgroundColor : 'blue',
                 }}>
             </View>
+            //Bottom atom
             <View
                 style = {{
                     width: '100%',
@@ -29,7 +32,6 @@ const FeedMolecule = () => {
                     backgroundColor : 'yellow',
                 }}>
             </View>
-
         </View>
     )
 }
