@@ -15,24 +15,12 @@ const MainTabNavigation = () => {
     return (
         <Tab.Navigator
             options = {mainHeaderOption}
-            screenOptions={({route}) => (screenOption(route))}>
+            screenOptions={({route}) => (bottomTabOption(route))}>
             <Tab.Screen name="Home" component={HomeNavigation}/>
             <Tab.Screen name="Chat" component={ChatListScreen}/>
             <Tab.Screen name="Search" component={SearchScreen}/>
         </Tab.Navigator>
     );
-}
-
-const screenOption = (route) => {
-    const tabBarOption = {
-        tabBarIcon: ({focused}) => {
-            const icon = bottomIcons[route.name];
-            const focusIcon = focused ? '': '-outline'
-            return <Icon name= {icon + focusIcon} size={21} color="black"/>;
-        },
-    }
-
-    return {...defaultTabOptions, ...tabBarOption, ...mainHeaderOption}
 }
 
 const mainHeaderOption = {
@@ -49,6 +37,18 @@ const mainHeaderOption = {
         </TouchableOpacity>
     ),
     headerMode: 'none'
+}
+
+const bottomTabOption = (route) => {
+    const tabBarOption = {
+        tabBarIcon: ({focused}) => {
+            const icon = bottomIcons[route.name];
+            const focusIcon = focused ? '': '-outline'
+            return <Icon name= {icon + focusIcon} size={21} color="black"/>;
+        },
+    }
+
+    return {...defaultTabOptions, ...tabBarOption, ...mainHeaderOption}
 }
 
 export default MainTabNavigation;
