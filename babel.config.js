@@ -21,6 +21,8 @@ module.exports = function(api) {
             "@assets": "./assets",
             "@icons" : "./assets/icons",
             "@res": "./src/res",
+            "@templates" : "./src/component/templates",
+            "@organisms" : "./src/component/organisms",
             "@molecules" : "./src/component/molecules",
             "@screens": "./src/screens",
             "@navigations" : "./src/navigation",
