@@ -1,5 +1,4 @@
-import {View, Text, Image, StyleSheet} from "react-native";
-import Icon from 'react-native-vector-icons/Ionicons';
+import {View, StyleSheet} from "react-native";
 import FeedHeader from '@organisms/feed/FeedHeader.js';
 import FeedSummary from '@organisms/feed/FeedSummary.js';
 import FeedFooter from '@organisms/feed/FeedFooter.js'
@@ -18,12 +17,12 @@ const FeedTemplate = () => {
 const style = StyleSheet.create({
     'container' : {
         width: '90%',
-        height: 240,
-        backgroundColor: 'white',
-        marginTop: 10,
+        height: 250,
         borderWidth: 5,
         borderRadius: 8,
         borderColor: 'white',
+        backgroundColor: 'white',
+        marginTop: 10,
         padding: 10
     }
 })

@@ -8,6 +8,11 @@ const HomeScreen = () => {
                 <FeedTemplate/>
                 <FeedTemplate/>
                 <FeedTemplate/>
+                <FeedTemplate/>
+                <FeedTemplate/>
+                <FeedTemplate/>
+                <FeedTemplate/>
+                <FeedTemplate/>
             </ScrollView>
         </SafeAreaView>
     )
@@ -15,8 +20,6 @@ const HomeScreen = () => {
 
 const style = StyleSheet.create({
     container: {
-        width: '100%',
-        height: '100%',
         alignItems: 'center',
     }
 })
