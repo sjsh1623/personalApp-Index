@@ -1,5 +1,6 @@
 import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
 import LoadingScreen from '@screens/loading/LoadingScreen.js';
 import LoginNavigation from "@navigations/login/LoginNavigation.js";
 import MainTabNavigation from "@navigations/main/MainTabNavigation.js";
