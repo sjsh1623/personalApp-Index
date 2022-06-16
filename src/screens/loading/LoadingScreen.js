@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import {Image, SafeAreaView} from "react-native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import commonStyle from '@res/commonStyle.js';
