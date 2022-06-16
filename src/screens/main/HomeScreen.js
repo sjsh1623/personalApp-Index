@@ -19,15 +19,14 @@ const HomeScreen = () => {
                 <FeedTemplate/>
                 <FeedTemplate/>
             </ScrollView>
-            <BottomSheet
-                ref = {bottomSheetRef}
-                snapPoints={snapPoints}
-                enablePanDownToClose={true}
-            >
-                <BottomSheetView>
-                    <Text>test</Text>
-                </BottomSheetView>
-            </BottomSheet>
+                <BottomSheet
+                    ref = {bottomSheetRef}
+                    snapPoints={snapPoints}
+                    enablePanDownToClose={true}>
+                    <BottomSheetView>
+                        <Text>test</Text>
+                    </BottomSheetView>
+                </BottomSheet>
         </SafeAreaView>
     )
 }
