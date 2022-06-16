@@ -6,8 +6,6 @@ import LoginNavigation from "@navigations/login/LoginNavigation.js";
 import MainTabNavigation from "@navigations/main/MainTabNavigation.js";
 import OnBoardingNavigation from "@navigations/onboarding/OnBoardingNavigation";
 import {defaultScreenOptions} from "@res/navigationOptions.js";
-import BottomSheet from "react-native-gesture-bottom-sheet";
-import {View} from "react-native-web";
 
 export default function App() {
     const Stack = createNativeStackNavigator();
