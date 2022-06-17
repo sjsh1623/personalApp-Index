@@ -6,17 +6,22 @@ import LoginNavigation from "@navigations/login/LoginNavigation.js";
 import MainTabNavigation from "@navigations/main/MainTabNavigation.js";
 import OnBoardingNavigation from "@navigations/onboarding/OnBoardingNavigation";
 import {defaultScreenOptions} from "@res/navigationOptions.js";
+import {GestureHandlerRootView} from "react-native-gesture-handler";
 
 export default function App() {
     const Stack = createNativeStackNavigator();
     return (
-        <NavigationContainer>
-            <Stack.Navigator screenOptions={defaultScreenOptions}>
-                <Stack.Screen name="LoadingScreen" component={LoadingScreen}/>
-                <Stack.Screen name="OnBoardingNavigation" component={OnBoardingNavigation}/>
-                <Stack.Screen name="LoginNavigation" component={LoginNavigation}/>
-                <Stack.Screen name="MainNavigation" component={MainTabNavigation}/>
-            </Stack.Navigator>
-        </NavigationContainer>
+        // GestureHandlerRootView is for bottom template
+        // https://docs.swmansion.com/react-native-gesture-handler/docs/installation/
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <NavigationContainer>
+                <Stack.Navigator screenOptions={defaultScreenOptions}>
+                    <Stack.Screen name="LoadingScreen" component={LoadingScreen}/>
+                    <Stack.Screen name="OnBoardingNavigation" component={OnBoardingNavigation}/>
+                    <Stack.Screen name="LoginNavigation" component={LoginNavigation}/>
+                    <Stack.Screen name="MainNavigation" component={MainTabNavigation}/>
+                </Stack.Navigator>
+            </NavigationContainer>
+        </GestureHandlerRootView>
     );
 }

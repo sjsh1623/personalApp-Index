@@ -8,39 +8,21 @@ import BottomSheet, {
 import Icon from "react-native-vector-icons/Ionicons";
 
 
-const Test = (bottomSheetModalRef) => {
-    // ref
+const BottomTemplate = (isOpen) => {
     const bottomSheetRef = useRef(null);
-    const [isOpen, setIsOpen] = useState(true);
-    // variables
-    const snapPoints = useMemo(() => ['25%', '30%'], []);
-    const handleSheetChanges = useCallback((index: number) => {
-        console.log('handleSheetChanges', index);
-    }, []);
-
-    const handlePresentModalPress = useCallback(() => {
-        bottomSheetRef.current?.present();
-    }, []);
-
-    handlePresentModalPress()
+    const snapPoints = useMemo(() => ['28%', '28%'], []);
+    bottomSheetRef.current?.present();
 
     // renders
     return (
         <BottomSheetModalProvider>
             <View style={styles.container}>
-                <Button
-                    onPress={handlePresentModalPress}
-                    title="Present Modal"
-                    color="black"
-                />
                 <BottomSheetModal
                     ref={bottomSheetRef}
                     snapPoints={snapPoints}
                     enablePanDownToClose={true}
                     enableHeaderGestures={true}
                     enableContentGestures={false}
-                    onClose={() => setIsOpen(false)}
-                    onChange = {handleSheetChanges()}
                 >
                     <View style={{alignItems: "center", marginTop: 20}}>
                         <View style={{flexDirection: 'row', alignItems: "center"}}>
@@ -105,8 +87,6 @@ const Test = (bottomSheetModalRef) => {
                 </BottomSheetModal>
             </View>
         </BottomSheetModalProvider>
-
-
     );
 };
 
