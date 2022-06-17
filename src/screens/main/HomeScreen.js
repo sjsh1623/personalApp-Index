@@ -1,11 +1,13 @@
 import React, {useCallback, useMemo, useRef} from "react";
-import {SafeAreaView, View, ScrollView, StyleSheet, Text} from "react-native";
+import {SafeAreaView, Button, ScrollView, StyleSheet, Text, View} from "react-native";
 import FeedTemplate from "@templates/FeedTemplate.js";
 import BottomSheet, {BottomSheetView} from "@gorhom/bottom-sheet";
+import Icon from "react-native-vector-icons/Ionicons";
+import BottomTemplate from "@templates/BottomTemplate";
 
 const HomeScreen = () => {
     const bottomSheetRef = useRef(null);
-    const snapPoints = ["30%, 90%"]
+    const snapPoints = ["35%, 50%"]
 
     return (
         <SafeAreaView>
@@ -19,14 +21,7 @@ const HomeScreen = () => {
                 <FeedTemplate/>
                 <FeedTemplate/>
             </ScrollView>
-                <BottomSheet
-                    ref = {bottomSheetRef}
-                    snapPoints={snapPoints}
-                    enablePanDownToClose={true}>
-                    <BottomSheetView>
-                        <Text>test</Text>
-                    </BottomSheetView>
-                </BottomSheet>
+            <BottomTemplate/>
         </SafeAreaView>
     )
 }

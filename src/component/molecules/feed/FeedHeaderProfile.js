@@ -6,8 +6,8 @@ const FeedHeaderProfile = () => {
         <View style={{flexDirection: 'row', alignItems: "center"}}>
             <Image
                 style={{
-                    width: 43,
-                    height: 43,
+                    width: 38,
+                    height: 38,
                     borderColor: 'red',
                     borderRadius: 75
                 }}
@@ -18,7 +18,7 @@ const FeedHeaderProfile = () => {
                 marginLeft: 8,
                 fontWeight: "bold",
                 fontSize: 14,
-            }}>Tesfawfwafwaft</Text>
+            }}>임석현</Text>
         </View>
     )
 }
