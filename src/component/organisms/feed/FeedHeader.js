@@ -4,11 +4,11 @@ import FeedHeaderMenu from '@molecules/feed/FeedHeaderMenu.js';
 import FeedHeaderProfile from '@molecules/feed/FeedHeaderProfile.js';
 import React from "react";
 
-const FeedHeader = () => {
+const FeedHeader = (props) => {
     return (
         <View style={style.container}>
             <FeedHeaderProfile/>
-            <FeedHeaderMenu/>
+            <FeedHeaderMenu optionSheet = {props.optionSheet}/>
         </View>
     )
 }

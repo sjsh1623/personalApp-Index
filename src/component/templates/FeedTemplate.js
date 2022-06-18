@@ -4,10 +4,10 @@ import FeedSummary from '@organisms/feed/FeedSummary.js';
 import FeedFooter from '@organisms/feed/FeedFooter.js'
 import React from "react";
 
-const FeedTemplate = () => {
+const FeedTemplate = (props) => {
     return (
         <View style= {style.container}>
-            <FeedHeader/>
+            <FeedHeader optionSheet = {props.optionSheet}/>
             <FeedSummary/>
             <FeedFooter/>
         </View>

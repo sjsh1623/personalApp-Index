@@ -5,5 +5,6 @@ export const defaultScreenOptions = {
 }
 
 export const defaultTabOptions = {
-    tabBarShowLabel: false
+    tabBarShowLabel: false,
+    tabBarVisible: false,
 }
