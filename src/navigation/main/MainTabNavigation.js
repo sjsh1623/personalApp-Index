@@ -8,6 +8,7 @@ import ChatListScreen from "@screens/main/ChatListScreen.js";
 import SearchScreen from "@screens/main/SearchScreen.js";
 import {defaultTabOptions} from "@res/navigationOptions.js";
 import {BottomSheetModalProvider} from "@gorhom/bottom-sheet";
+import {DimmedProvider} from "@reducer/DimmedReducer"
 import {BlockScreen} from "@screens/BlockScreen";
 
 
@@ -20,13 +21,15 @@ const MainTabNavigation = () => {
         // Bottom Sheet 하단 Tab Navigation을 Cover하기 위해 Wrap
         // https://github.com/gorhom/react-native-bottom-sheet/issues/249
         <BottomSheetModalProvider style={{marginBottom: 100}}>
-            <Tab.Navigator
-                options={mainHeaderOption}
-                screenOptions={({route}) => (bottomTabOption(route))}>
-                <Tab.Screen name="Home" component={HomeNavigation} params={isBlockScreen}/>
-                <Tab.Screen name="Chat" component={ChatListScreen}/>
-                <Tab.Screen name="Search" component={SearchScreen}/>
-            </Tab.Navigator>
+            <DimmedProvider>
+                <Tab.Navigator
+                    options={mainHeaderOption}
+                    screenOptions={({route}) => (bottomTabOption(route))}>
+                    <Tab.Screen name="Home" component={HomeNavigation} params={isBlockScreen}/>
+                    <Tab.Screen name="Chat" component={ChatListScreen}/>
+                    <Tab.Screen name="Search" component={SearchScreen}/>
+                </Tab.Navigator>
+            </DimmedProvider>
         </BottomSheetModalProvider>
     );
 }

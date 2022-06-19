@@ -13,6 +13,7 @@ module.exports = {
             "@screens": path.resolve(__dirname, "./src/screens"),
             "@navigations" : path.resolve(__dirname, "./src/navigation"),
             "@stores" : path.resolve(__dirname, "./src/stores"),
+            "@reducer" : path.resolve(__dirname, "./src/reducer"),
         },
     },
 };
