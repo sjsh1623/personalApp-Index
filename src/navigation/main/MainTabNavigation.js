@@ -8,7 +8,7 @@ import ChatListScreen from "@screens/main/ChatListScreen.js";
 import SearchScreen from "@screens/main/SearchScreen.js";
 import {defaultTabOptions} from "@res/navigationOptions.js";
 import {BottomSheetModalProvider} from "@gorhom/bottom-sheet";
-import {DimmedProvider} from "@reducer/DimmedReducer"
+import {DimmedProvider} from "@context";
 import {BlockScreen} from "@screens/BlockScreen";
 
 
@@ -29,6 +29,7 @@ const MainTabNavigation = () => {
                     <Tab.Screen name="Chat" component={ChatListScreen}/>
                     <Tab.Screen name="Search" component={SearchScreen}/>
                 </Tab.Navigator>
+                <BlockScreen/>
             </DimmedProvider>
         </BottomSheetModalProvider>
     );

@@ -27,7 +27,7 @@ module.exports = function (api) {
                         "@screens": "./src/screens",
                         "@navigations": "./src/navigation",
                         "@stores": "./src/stores",
-                        "@reducer" : "./src/reducer",
+                        "@context" : "./src/context",
                     }
                 }
             ]

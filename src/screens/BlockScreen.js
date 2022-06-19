@@ -1,10 +1,14 @@
 import React, {useState, useContext} from "react";
 import {Animated} from "react-native";
-import {DimmedContext} from "@reducer/DimmedReducer";
+import {Context} from "@context";
 
 export const BlockScreen = (props) => {
     const opacity = useState(new Animated.Value(0))[0];
-    const {display} = useContext(DimmedContext);
+    const {
+        state: {
+            dimmedScreen: { display },
+        },
+    } = useContext(Context);
 
     const fadeIn = () => {
         Animated.timing(opacity, {
@@ -27,7 +31,7 @@ export const BlockScreen = (props) => {
             height: '100%',
             width: '100%',
             backgroundColor: 'black',
-            display: display,
+
             opacity: opacity,
         }}>
         </Animated.View>
