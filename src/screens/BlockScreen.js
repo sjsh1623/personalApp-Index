@@ -6,9 +6,10 @@ export const BlockScreen = (props) => {
     const opacity = useState(new Animated.Value(0))[0];
     const {
         state: {
-            dimmedScreen: { display },
-        },
+            dimmedScreen: {display},
+        }
     } = useContext(Context);
+    console.log(display)
 
     const fadeIn = () => {
         Animated.timing(opacity, {
@@ -31,7 +32,7 @@ export const BlockScreen = (props) => {
             height: '100%',
             width: '100%',
             backgroundColor: 'black',
-
+            display: 'none',
             opacity: opacity,
         }}>
         </Animated.View>

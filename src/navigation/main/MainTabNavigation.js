@@ -14,8 +14,6 @@ import {BlockScreen} from "@screens/BlockScreen";
 
 const MainTabNavigation = () => {
     const Tab = createBottomTabNavigator();
-    const [blockScreen, setBlockScreen] = useState(false);
-    const isBlockScreen = (isBlock) => setBlockScreen(isBlock);
 
     return (
         // Bottom Sheet 하단 Tab Navigation을 Cover하기 위해 Wrap
@@ -25,7 +23,7 @@ const MainTabNavigation = () => {
                 <Tab.Navigator
                     options={mainHeaderOption}
                     screenOptions={({route}) => (bottomTabOption(route))}>
-                    <Tab.Screen name="Home" component={HomeNavigation} params={isBlockScreen}/>
+                    <Tab.Screen name="Home" component={HomeNavigation}/>
                     <Tab.Screen name="Chat" component={ChatListScreen}/>
                     <Tab.Screen name="Search" component={SearchScreen}/>
                 </Tab.Navigator>
