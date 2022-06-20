@@ -3,7 +3,8 @@ import {DIM_SCREEN} from "@context/action"
 
 const initialState = {
     dimmedScreen: {
-        display: false
+        visible: false,
+        display : 'none'
     }
 };
 
@@ -15,9 +16,18 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 dimmedScreen: {
-                    ...state.dimmedScreen
+                    visible: action.visible,
+                    display: 'flex'
                 }
             }
+        case 'CLEAR_SCREEN' :
+            return {
+                ...state,
+                dimmedScreen: {
+                    display: 'none'
+                }
+            }
+
         default:
             return state;
     }
