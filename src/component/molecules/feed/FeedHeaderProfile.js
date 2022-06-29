@@ -1,18 +1,13 @@
 import {Image, Text, View} from "react-native";
 import React from "react";
+import UserImage from "@atoms/UserImage";
 
 const FeedHeaderProfile = () => {
     return (
         <View style={{flexDirection: 'row', alignItems: "center"}}>
-            <Image
-                style={{
-                    width: 38,
-                    height: 38,
-                    borderColor: 'red',
-                    borderRadius: 75
-                }}
-                source={require("@assets/profile-andrew.jpeg")}
-                resizeMode={"cover"}/>
+            <UserImage
+                radius={40}
+                path={require('@assets/profile-andrew.jpeg')}/>
 
             <Text style={{
                 marginLeft: 8,

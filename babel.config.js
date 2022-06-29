@@ -28,6 +28,7 @@ module.exports = function (api) {
                         "@navigations": "./src/navigation",
                         "@stores": "./src/stores",
                         "@context" : "./src/context",
+                        "@atoms" : "./src/component/atoms"
                     }
                 }
             ]

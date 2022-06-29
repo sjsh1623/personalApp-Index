@@ -20,7 +20,6 @@ export const BlockScreen = () => {
     }
 
     const fadeOut = () => {
-        console.log('test')
         Animated.timing(opacity, {
             toValue: 0,
             duration: 200,
