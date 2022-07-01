@@ -7,10 +7,11 @@ const ChattingScreen = () => {
             backgroundColor: "white",
             width: "100%",
             height: "100%",
-            paddingLeft: 20,
-            paddingRight: 20
+            paddingLeft: 10,
+            paddingRight: 10
         }}>
             <ScrollView>
+
             </ScrollView>
         </SafeAreaView>
     )
