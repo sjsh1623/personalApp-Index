@@ -1,6 +1,6 @@
 import React, {useContext, useState} from "react";
 import {SafeAreaView, ScrollView, StyleSheet} from "react-native";
-import FeedTemplate from "@templates/FeedTemplate.js";
+import FeedTemplate from "@templates/FeedTemplate";
 import BottomTemplate from "@templates/BottomTemplate";
 import {Context} from "@context";
 import {DIM_SCREEN, CLEAR_SCREEN} from "@context/action";

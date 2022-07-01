@@ -1,9 +1,10 @@
 import React, {useRef, useMemo, useCallback} from "react";
-import {Image, SafeAreaView, ScrollView, StyleSheet} from "react-native";
+import {SafeAreaView, ScrollView, StyleSheet} from "react-native";
 import ChatListTemplate from "@templates/ChatListTemplate"
-import Icon from 'react-native-vector-icons/Ionicons';
 
-const ChatListScreen = () => {
+const ChatHomeScreen = ({navigation}) => {
+    console.log(navigation)
+
     return (
         <SafeAreaView style={{
             backgroundColor: "white",
@@ -54,4 +55,4 @@ const style = StyleSheet.create({
     }
 })
 
-export default ChatListScreen;
+export default ChatHomeScreen;

@@ -1,6 +1,6 @@
 import React, {useCallback, useMemo, useRef, useState} from 'react';
 import {View, Text, StyleSheet, Button, SafeAreaView} from 'react-native';
-import BottomSheet, {BottomSheetModal,} from "@gorhom/bottom-sheet";
+import {BottomSheetModal} from "@gorhom/bottom-sheet";
 import Icon from "react-native-vector-icons/Ionicons";
 
 

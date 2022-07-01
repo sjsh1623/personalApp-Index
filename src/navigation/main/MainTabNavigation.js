@@ -4,12 +4,13 @@ import {bottomIcons} from "@res/bottomIcons";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import Icon from 'react-native-vector-icons/Ionicons';
 import HomeNavigation from "@navigations/main/HomeNavigation.js";
-import ChatListScreen from "@screens/main/ChatListScreen.js";
-import SearchScreen from "@screens/main/SearchScreen.js";
+import ChatHomeScreen from "@screens/main/chat/ChatHomeScreen.js";
+import SearchScreen from "@screens/main/search/SearchScreen.js";
 import {defaultTabOptions} from "@res/navigationOptions.js";
 import {BottomSheetModalProvider} from "@gorhom/bottom-sheet";
 import {DimmedProvider} from "@context";
 import {BlockScreen} from "@screens/BlockScreen";
+import ChatNavigation from "@navigations/main/ChatNavigation";
 
 
 const MainTabNavigation = () => {
@@ -24,7 +25,7 @@ const MainTabNavigation = () => {
                     options={mainHeaderOption}
                     screenOptions={({route}) => (bottomTabOption(route))}>
                     <Tab.Screen name="Home" component={HomeNavigation}/>
-                    <Tab.Screen name="Chat" component={ChatListScreen}/>
+                    <Tab.Screen name="Chat" component={ChatNavigation}/>
                     <Tab.Screen name="Search" component={SearchScreen}/>
                 </Tab.Navigator>
                 <BlockScreen/>
