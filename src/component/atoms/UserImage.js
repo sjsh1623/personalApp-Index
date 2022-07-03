@@ -7,7 +7,7 @@ const UserImage = (props) => {
             style={{
                 width: radius,
                 height: radius,
-                borderRadius: 75
+                borderRadius: 75,
             }}
             source={path}
             resizeMode={"cover"}/>
