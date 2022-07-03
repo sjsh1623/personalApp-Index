@@ -1,6 +1,7 @@
 import {SafeAreaView, ScrollView} from "react-native";
 import ChatListTemplate from "@templates/ChatListTemplate";
 import SendTemplate from "@templates/Chatting/SendTemplate";
+import ReceiveTemplate from "@templates/Chatting/ReceiveTemplate";
 
 const ChattingScreen = () => {
     return (
@@ -13,6 +14,37 @@ const ChattingScreen = () => {
         }}>
             <ScrollView>
                 <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
+                <SendTemplate/>
+                <ReceiveTemplate/>
             </ScrollView>
         </SafeAreaView>
     )

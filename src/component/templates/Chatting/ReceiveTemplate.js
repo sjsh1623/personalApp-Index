@@ -6,8 +6,8 @@ const ReceiveTemplate = () => {
         <View style ={{
             flexDirection: 'row',
             alignItems: "center",
-            marginBottom: 10,
-            marginTop : 10,
+            marginBottom: 3,
+            marginTop : 3,
         }}>
             <View style={{flexDirection: 'row'}}>
                 <UserImage
@@ -17,9 +17,11 @@ const ReceiveTemplate = () => {
             <View style={{
                 marginLeft : 8,
                 borderWidth : 1,
-                borderColor : "grey",
+                borderColor : "#E0E0E0",
                 fontsize : 15,
                 padding: 6,
+                paddingLeft: 15,
+                paddingRight : 15,
                 borderRadius : 45,
                 alignContent  : "center"
             }}>
@@ -28,3 +30,5 @@ const ReceiveTemplate = () => {
         </View>
     )
 }
+
+export default ReceiveTemplate;

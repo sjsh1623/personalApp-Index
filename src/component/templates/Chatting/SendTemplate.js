@@ -5,24 +5,21 @@ import ChatListSummary from "@organisms/chat/ChatListSummary";
 const SendTemplate = (props) => {
     return (
         <View style ={{
-            flexDirection: 'row',
+            flexDirection: 'row-reverse',
             alignItems: "center",
-            marginBottom: 10,
-            marginTop : 10,
+            marginBottom: 3,
+            marginTop : 3,
         }}>
-            <View style={{flexDirection: 'row'}}>
-                <UserImage
-                    radius={38}
-                    path={require('@assets/profile-andrew.jpeg')}/>
-            </View>
             <View style={{
-                marginLeft : 8,
-                borderWidth : 1,
+                marginRight : 8,
                 borderColor : "grey",
                 fontsize : 15,
-                padding: 6,
+                padding: 7,
+                paddingLeft: 15,
+                paddingRight : 15,
                 borderRadius : 45,
-                alignContent  : "center"
+                alignContent  : "center",
+                backgroundColor : "#EEEEEE"
             }}>
                 <Text>여기는 테스트입니다.</Text>
             </View>
