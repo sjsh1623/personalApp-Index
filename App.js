@@ -1,4 +1,3 @@
-import React, {useRef, useState} from "react";
 import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import LoadingScreen from '@screens/loading/LoadingScreen.js';
@@ -7,8 +6,6 @@ import MainTabNavigation from "@navigations/main/MainTabNavigation.js";
 import OnBoardingNavigation from "@navigations/onboarding/OnBoardingNavigation";
 import {defaultScreenOptions} from "@res/navigationOptions.js";
 import {GestureHandlerRootView} from "react-native-gesture-handler";
-import BottomTemplate from "@templates/BottomTemplate";
-import {View, Text, SafeAreaView} from "react-native";
 
 export default function App() {
     const Stack = createNativeStackNavigator();

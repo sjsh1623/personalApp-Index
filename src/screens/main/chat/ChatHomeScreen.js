@@ -2,9 +2,7 @@ import React, {useRef, useMemo, useCallback} from "react";
 import {SafeAreaView, ScrollView, StyleSheet} from "react-native";
 import ChatListTemplate from "@templates/ChatListTemplate"
 
-const ChatHomeScreen = ({navigation}) => {
-    console.log(navigation)
-
+const ChatHomeScreen = () => {
     return (
         <SafeAreaView style={{
             backgroundColor: "white",
@@ -14,36 +12,36 @@ const ChatHomeScreen = ({navigation}) => {
             paddingRight: 20
         }}>
             <ScrollView>
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
-                <ChatListTemplate />
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
+                <ChatListTemplate/>
             </ScrollView>
         </SafeAreaView>
     )

@@ -2,10 +2,10 @@ import React, {useContext, useState} from "react";
 import {SafeAreaView, ScrollView, StyleSheet} from "react-native";
 import FeedTemplate from "@templates/FeedTemplate";
 import BottomTemplate from "@templates/BottomTemplate";
-import {Context} from "@context";
+import {Context} from "@context/bottomTemplateDim";
 import {DIM_SCREEN, CLEAR_SCREEN} from "@context/action";
 
-const HomeScreen = (props) => {
+const HomeScreen = () => {
     const [openOption, setOpenOption] = useState(false);
     const {dispatch} = useContext(Context);
 

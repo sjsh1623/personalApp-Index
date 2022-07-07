@@ -2,7 +2,8 @@ import {Image, ScrollView, Text, View, TouchableOpacity} from "react-native";
 import UserImage from "@atoms/UserImage";
 import ChatListSummary from "@organisms/chat/ChatListSummary";
 import ChatListStatus from "@atoms/ChatListStatus";
-import {useNavigation} from "@react-navigation/core";
+import {useNavigation} from "@react-navigation/native";
+
 
 const ChatListTemplate = () => {
     const navigation = useNavigation();

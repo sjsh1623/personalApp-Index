@@ -1,8 +1,5 @@
-import React, {useRef, useMemo, useCallback} from "react";
-import {View, Text, StyleSheet} from "react-native";
+import {View, StyleSheet} from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
-import BottomSheet, {BottomSheetModal} from '@gorhom/bottom-sheet';
-import BottomTemplate from '@templates/BottomTemplate.js'
 
 const FeedHeaderMenu = (props) => {
     return (

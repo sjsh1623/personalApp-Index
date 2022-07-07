@@ -1,6 +1,6 @@
 import React, {useState, useContext} from "react";
 import {Animated} from "react-native";
-import {Context} from "@context";
+import {Context} from "@context/bottomTemplateDim";
 
 
 export const BlockScreen = () => {

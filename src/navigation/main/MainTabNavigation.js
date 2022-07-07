@@ -8,7 +8,7 @@ import ChatHomeScreen from "@screens/main/chat/ChatHomeScreen.js";
 import SearchScreen from "@screens/main/search/SearchScreen.js";
 import {defaultTabOptions} from "@res/navigationOptions.js";
 import {BottomSheetModalProvider} from "@gorhom/bottom-sheet";
-import {DimmedProvider} from "@context";
+import {DimmedProvider} from "@context/bottomTemplateDim";
 import {BlockScreen} from "@screens/BlockScreen";
 import ChatNavigation from "@navigations/main/ChatNavigation";
 
